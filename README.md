@@ -8,7 +8,7 @@
 - *Coding the Agent node* - The third part required building a node that would take in a user-specified goal position via a ROS service, request the planned path from the Planner node, and then publish the robot and path markers in Rviz.
 - *Testing the system* - In this last part, a launch file was used to start up two robots at specific starting positions. A ROS service hosted by the Agent node was then used (via the Linux Terminal or from the unit tests) to update the goal positions to certain values and watch as the paths were displayed on Rviz.For the testing part, we can modify directly to the CMakeLists.txt
 
-**System Info:** This package was tested on Ubuntu Linux 16.04 with ROS Kinetic.
+**System Info:** This package was tested on **Ubuntu Linux 16.04 with ROS Kinetic.**
 
 ### Runtime Instructions
 After cloning the repo and building it, just type `roslaunch multi_agent_planner agents.launch` into the terminal to get started. This will launch Rviz and show a 10x10 grid of purple nodes with two colored cylinders (the robots). The colors are randomly generated so if they are too similar in appearance, just `Cntrl-C` and launch the nodes again. By default, *agent_1* (the first robot) is located at position [2,0,0] and *agent_2* (the second robot) is at [0,3,0] (the order is x[m], y[m], yaw[deg]). At startup, you should see three helpful messages printed out to the console confirming that services are running. They are...
