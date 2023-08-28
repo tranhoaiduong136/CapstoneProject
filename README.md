@@ -7,7 +7,7 @@
 - *Coding the Planner node* - As its name suggests, this involved implementing an algorithm to determine the minimum distance path from a robot's initial starting position to a user-specified goal position. Additionally, the node was responsible for archiving the planned paths so that they could be used for collision detection.
 - *Coding the Agent node* - The third part required building a node that would take in a user-specified goal position via a ROS service, request the planned path from the Planner node, and then publish the robot and path markers in Rviz.
 - *Testing the system* - In this last part, a launch file was used to start up two robots at specific starting positions. A ROS service hosted by the Agent node was then used (via the Linux Terminal or from the unit tests) to update the goal positions to certain values and watch as the paths were displayed on Rviz.For the testing part, we can modify directly to the CMakeLists.txt
-- The video and reference can be found in this  ![Capstone reference](https://drive.google.com/drive/folders/1G2fulxjxCt_DGC3bYGHdrAfnpl6Qkn84?usp=drive_link)
+- The video and reference can be found in this  [Capstone reference](https://drive.google.com/drive/folders/1G2fulxjxCt_DGC3bYGHdrAfnpl6Qkn84?usp=drive_link)
 
 **System Info:** This package was tested on **Ubuntu Linux 16.04 with ROS Kinetic.**
 
