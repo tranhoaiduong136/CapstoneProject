@@ -45,8 +45,6 @@ The following is a list of additional features.
  - Both nodes were implemented as objects in code. As a result, it is a simple matter of changing a parameter or two in the constructor to make the grid larger or smaller, change the `edge_cost` value, or change the speed it takes for a robot to traverse the path.
  - Testing the system via unit tests (using rostest/gtest). The unit tests call the `update_goal` rosservice automatically with pre-configured goal poses. Besides for animating the agents in Rviz, it also checks to make sure that the planned paths are correct. To run the tests, just type `rostest multi_agent_planner agents.test` in the command terminal. If running them for the first time, make sure to build the test file beforehand by typing `catkin_make run_tests_multi_agent_planner` in the terminal.
 
- Just for fun, I decided to run the system with four agents. Below is a GIF showing the result. The yellow nodes represent obstacles in the world. A video of this can be found in the `media` directory. Note how the brown agent is also rotating (in this case, 180 degrees).
-
  ![four_robots](media/four_agents.gif)
 
  Here is another GIF that also shows the system working with four agents. However, in this case, I purposely generated goal poses that could cause collisions if not handled properly. This can really be seen in the case of the green and gray agents. Without the collision detection feature, the paths generated for both of these agents would have led the agents to go as far left as possible before making them go down towards the bottom of the grid (since my implementation of the A* algorithm breaks ties by choosing the node with the lower 'x' value).
