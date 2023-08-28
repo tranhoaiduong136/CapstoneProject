@@ -1,4 +1,4 @@
-# Multi-agent Path Planner
+# Capstone Project: Multi-agent Path Planner
 ## Description
 **Objective:** To perform motion planning for at least 2 robots (where each robot can only move along the edges between nodes) and display the planned paths in Rviz.
 
@@ -73,4 +73,4 @@ The following is a list of additional features.
 
 The future work should be considered about is modification of the warehouse into the simulation
 Another thing should be cosnidered about is that ROS1 to ROS2
-# CapstoneProject
+
